@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+       
+        <div class="my-3">
+            <label for="pName">product Name</label>
+            <input type="text" id="pName" class="form-control">
+        </div>
+
+        <div class="my-3">
+            <label for="pPrice">product Price</label>
+            <input type="text" id="pPrice" class="form-control">
+        </div>
+
+        <div class="my-3">
+            <label for="pCategory">product Category</label>
+            <input type="text" id="pCategory" class="form-control">
+        </div>
+
+        <div class="my-3">
+            <label for="pDescription">product Description</label>
+            <textarea name="text" id="pDescription" class="form-control"></textarea>
+        </div>
+
+        <button class="btn btn-info" onclick="addProduct()" id="addBtn">Add product</button>
+
+    </div>
+
+    <div class="container">
+        <input type="search" onkeyup="search()" class="form-control my-4 " id="searchValue" placeholder="enter a product name">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>index</th>
+                    <th>product Name</th>
+                    <th>product Price</th>
+                    <th>product Category</th>
+                    <th>product Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tData">
+                 
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
